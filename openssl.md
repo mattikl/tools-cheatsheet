@@ -25,9 +25,9 @@ Just view the expiration:
 openssl x509 -in file.crt -enddate -noout
 ```
 
-### PCKS12
+### PKCS12
 
-Extracting cert and key from PCKS12 (`.p12 .pfx`):
+Extracting cert and key from PKCS12 (`.p12 .pfx`):
 
 ```bash
 openssl pkcs12 -nokeys -in file.pkcs12 -out file.crt
