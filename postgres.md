@@ -30,6 +30,7 @@ psql -f file.sql
 | `\d tablename` | Describe a table |
 | `\i` | execute file contents |
 | `\df` | List all functions |
+| `\df+ funcname` | Describe a function (run in expanded mode) |
 | `\x` | Toggle expanded mode |
 | `\!` | Execute bash command |
 
