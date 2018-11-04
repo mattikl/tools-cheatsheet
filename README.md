@@ -7,3 +7,4 @@ hunting for the right options, but I'm glad if it's of help to others.
 
 * [OpenSSL](openssl.md)
 * [Postgres](postgres.md)
+* [MySQL](mysql.md)
