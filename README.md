@@ -9,3 +9,4 @@ hunting for the right options, but I'm glad if it's of help to others.
 * [Postgres](postgres.md)
 * [MySQL](mysql.md)
 * [Mongo](mongo.md)
+* [Docker](docker.md)
