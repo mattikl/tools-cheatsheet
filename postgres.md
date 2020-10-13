@@ -52,8 +52,27 @@ COPY (select ...) TO '/path/to/file.csv' (format CSV, header true);
 ```
 
 * path must be absolute
+* must be superuser to COPY to or from a file (otherwise use psql's `\copy`)
 * CSV encoding from database's Ctype?
 * [COPY](https://www.postgresql.org/docs/current/static/sql-copy.html)
+
+#### Copying test data between databases
+
+Using psql's `\copy`:
+
+psql connection to source DB:
+
+```sql
+# test the select statement used below
+\copy (select ...) to '/tmp/testdata.csv' (format CSV, header true);
+```
+
+psql connection to destination DB:
+
+```sql
+# test the select statement used below
+\copy (select ...) from '/tmp/testdata.csv' (format CSV, header true);
+```
 
 ## pg_dump
 
