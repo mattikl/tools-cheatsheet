@@ -70,8 +70,7 @@ psql connection to source DB:
 psql connection to destination DB:
 
 ```sql
-# test the select statement used below
-\copy (select ...) from '/tmp/testdata.csv' (format CSV, header true);
+\copy (tablename) from '/tmp/testdata.csv' (format CSV, header true);
 ```
 
 ## pg_dump
